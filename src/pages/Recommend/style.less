@@ -1,0 +1,50 @@
+@import '~antd/es/style/themes/default.less';
+
+.ant-card-body {
+  padding-bottom: 0;
+}
+.site-card-border-less-wrapper {
+  padding: 24px;
+  background: #ececec;
+}
+
+.extraImg {
+  width: 150px;
+  margin-top: -80px;
+  text-align: center;
+  img {
+    width: 100%;
+  }
+}
+.pageHeaderContent {
+  position: relative;
+}
+
+@media screen and (max-width: @screen-lg) {
+  .contentLink {
+    a {
+      margin-right: 16px;
+    }
+  }
+}
+@media screen and (max-width: @screen-md) {
+  .extraImg {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: @screen-sm) {
+  .contentLink {
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 1000px;
+    a {
+      margin-right: 16px;
+    }
+    img {
+      margin-right: 4px;
+    }
+  }
+}

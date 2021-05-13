@@ -1,0 +1,32 @@
+@import '~antd/es/style/themes/default.less';
+*{ margin: 0; padding: 0;}
+.site-page-header-ghost-wrapper {
+  margin: 0 auto;
+  background-color: white;
+}
+
+
+.textOverflow() {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
+
+// mixins for clearfix
+// ------------------------
+.clearfix() {
+  zoom: 1;
+  &::before,
+  &::after {
+    display: table;
+    content: ' ';
+  }
+  &::after {
+    clear: both;
+    height: 0;
+    font-size: 0;
+    visibility: hidden;
+  }
+}
+
